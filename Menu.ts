@@ -7,12 +7,12 @@ export function main(){
     let opcao:number;
 
     const conta: Conta = new Conta(1, 123, 1, "adriana", 10000);
-    conta.visulalizar();
+    conta.visualizar();
     conta.sacar(10500);
-    conta.visulalizar();
+    conta.visualizar();
     conta.depositar(5000);
-    conta.visulalizar();
-    
+    conta.visualizar();
+
         while (true){
             console.log(colors.bg.black,colors.fg.bluestrong)
             console.log("\n*********************************************************\n");
