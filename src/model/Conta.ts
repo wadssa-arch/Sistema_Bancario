@@ -1,3 +1,5 @@
+import { colors } from "../util/Colors";
+
 export class Conta{
 
     private _numero: number;
@@ -82,13 +84,16 @@ export class Conta{
                 tipo = "Conta Poupanca"
                 break
         }
-
-        console.log("\n*********************************");
+        console.log(colors.bg.black, colors.fg.red,);
+        console.log("*********************************");
         console.log("Dados da Conta:");
+        console.log("*********************************");
+        console.log(colors.bg.black,colors.fg.whitestrong);
         console.log("Numero da Conta: " + this._numero);
         console.log("Agencia: " + this._agencia);
         console.log("Tipo da Conta: " + tipo);
         console.log("Titular: " + this._titular);
         console.log("Saldo: " + this._saldo.toFixed(2));
+        console.log(colors.reset);
     }
 }
